@@ -10,8 +10,22 @@ dash_threshold = 0.7
 
 running = False
 
+# Morse code dictionary for decoding
+morse_code_dict = {
+    '.-': 'A', '-...': 'B', '-.-.': 'C', '-..': 'D', '.': 'E',
+    '..-.': 'F', '--.': 'G', '....': 'H', '..': 'I', '.---': 'J',
+    '-.-': 'K', '.-..': 'L', '--': 'M', '-.': 'N', '---': 'O',
+    '.--.': 'P', '--.-': 'Q', '.-.': 'R', '...': 'S', '-': 'T',
+    '..-': 'U', '...-': 'V', '.--': 'W', '-..-': 'X', '-.--': 'Y',
+    '--..': 'Z', '/': ' '
+}
+
+def decode_morse(morse_code):
+    """Translates a Morse code sequence into a character."""
+    return morse_code_dict.get(morse_code, '')  # Returns an empty string if code is not found
+
 def listen_for_pings():
-    """Receives pings and records the time intervals."""
+    """Receives pings and records the time intervals, then decodes to text."""
     global running
     previous_time = None
     morse_code = ""
@@ -29,8 +43,11 @@ def listen_for_pings():
             elif time_diff < dash_threshold:
                 morse_code += "-"
             else:
-                output_text.insert(tk.END, morse_code + " ")
-                morse_code = ""
+                # Decode current Morse code to text and display it
+                decoded_char = decode_morse(morse_code)
+                output_text.insert(tk.END, decoded_char)
+                morse_code = ""  # Reset morse code for next character
+
         previous_time = current_time
         time.sleep(0.1)
 
