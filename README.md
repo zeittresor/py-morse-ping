@@ -1,7 +1,7 @@
 # py-morse-ping
 Send Text using the ping command (proof of concept)
 
-This is a simple "proof of concept" idea. The two scrips make use of the "ping" command to transfer
+This is a simple "proof of concept" idea. The two scripts make use of the "ping" command to transfer
 simple text messages using "morse-code".
 
 In the early days of the last century many ships had used the morse code to transmit simple text informations
