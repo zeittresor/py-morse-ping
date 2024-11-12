@@ -11,5 +11,10 @@ to transmit some basic text messages.
 The idea for this "proof of concept" idea is the same it is simple using the delay between two "ping" signals
 from a host to a recipiant to do the same thing.
 
-I have not tested it but it might work. ;-)
-I have no idea for what it could be used because it might be very slow - but how ever it should work IMHO ;-)
+I have not tested it but it might work. 😉
+
+I have no idea for what it could be used because it might be very slow - but how ever it should work IMHO 🙂
+
+The Transmission requires two Scripts, the first is to send the text informations (converted to morse code
+using the build in converter) to the receiver Scipt using ping to the target system (requires administrator
+credentials to work).
