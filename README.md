@@ -25,5 +25,5 @@ Receiver Preview:
 
 
 The Transmission requires two Scripts, the first is to send the text informations (converted to morse code
-using the build in converter) to the receiver Scipt using ping to the target system (requires administrator
-credentials to work).
+using the build in converter) to the receiver Scipt using "ping" to the target system (requires administrator
+credentials to make it hopefully work).
