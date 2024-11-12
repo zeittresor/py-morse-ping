@@ -15,6 +15,15 @@ I have not tested it but it might work. 😉
 
 I have no idea for what it could be used because it might be very slow - but how ever it should work IMHO 🙂
 
+Sender Preview:
+
+![grafik](https://github.com/user-attachments/assets/3b7b8193-9729-4b95-ae95-35af0b2fc3f6)
+
+Receiver Preview:
+
+![grafik](https://github.com/user-attachments/assets/938a7bc5-a016-42a1-aa69-3a15e846db2f)
+
+
 The Transmission requires two Scripts, the first is to send the text informations (converted to morse code
 using the build in converter) to the receiver Scipt using ping to the target system (requires administrator
 credentials to work).
